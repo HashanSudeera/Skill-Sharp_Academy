@@ -1,5 +1,7 @@
 <html>
     <head>
+        <link rel="shortcut icon" href="img/favicon.png">
+        <title>Teacher Login</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="teacher_login_page">

@@ -1,5 +1,7 @@
 <html>
     <head>
+        <title>Student login</title>
+        <link rel="shortcut icon" href="img/favicon.png">
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="login_page">
