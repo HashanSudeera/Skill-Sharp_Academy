@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans:wght@300;400&family=Kenia&display=swap');
+h1 {
+    color: rgb(30, 255, 0);
+    font-family: 'Gloock', serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 4px;
+}
+
+body {
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_title{
+    background-color: rgb(6, 61, 80);
+    border-radius: 10px;
+
+}
+.img{
+    width: 400px;
+    height: 300px;
+    border: solid rgb(6, 61, 80) 10px ;
+    border-radius: 10px;
+
+    
+}
+
+.student{
+    position: relative;
+    font-family: 'Gloock', serif;
+    margin-left: 290px;
+
+}
+.teacher{
+    position: relative;
+    font-family: 'Gloock', serif;
+    margin-left: 700px;
+    margin-top: 10px;
+    
+
+
+}
+.text-block a{
+    position: absolute;
+    top: 1px;
+    left: 410px;
+    font-size: 50px;
+    text-decoration: none;
+    background-color: rgb(6, 61, 80);
+    color: white;
+    border-radius: 20px;
+    padding: 50px;
+    padding-top: 120px;
+    padding-bottom: 135px;
+
+    
+}
+.text-block a:hover{
+    background-color: white ;
+    color : rgb(6, 61, 80);
+}
+.text-block1 a{
+    position: absolute;
+    top: 1px;
+    left: -420px;
+    font-size: 50px;
+    text-decoration: none;
+    background-color: rgb(6, 61, 80);
+    color: white;
+    border-radius: 20px;
+    padding: 50px;
+    padding-top: 120px;
+    padding-bottom: 135px;
+    
+}
+.text-block1 a:hover{
+    background-color: white ;
+    color : rgb(6, 61, 80);
+}
+
+
+
+
+

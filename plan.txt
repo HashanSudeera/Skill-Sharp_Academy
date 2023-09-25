@@ -1,0 +1,39 @@
+Skill-Sharp Academy [student and teachers management system]
+
+------------------------------------
+Skill-Sharp Academy database [main database]
+------------------------------------
+#entity
+Student
+Teacher
+
+Student Table
+------------------------------------
+StudentID (Primary Key) [S001]
+FirstName
+LastName
+DateOfBirth (calculate age)
+City
+Email
+Password
+
+Teachers Table
+------------------------------------
+TeacherID (Primary Key) [T001]
+FirstName
+LastName
+DateOfBirth (calculate age)
+City
+ContactNumber
+
+--------------------------------
+create files 
+--------------------------------
+index.php [main file]
+2 logging form
+2 singup form
+student dashboard
+teacher dashboard
+
+
+
