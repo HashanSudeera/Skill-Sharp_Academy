@@ -8,10 +8,17 @@ h1 {
     letter-spacing: 4px;
 }
 
-body {
+.main_page{
     background-image: url("img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.login_page{
+    background-image: url("img/login-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .main_title{
@@ -81,6 +88,13 @@ body {
     color : rgb(6, 61, 80);
 }
 
+.form_space{
+    background-color: brown;
+    text-align: center;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
 
 
 

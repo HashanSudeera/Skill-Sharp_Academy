@@ -1,10 +1,13 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style/style.css">
     </head>
-    <body>
+    <body class="login_page">
+    <div class = "main_title">
+            <h1>Skill-<font style="color :white;">Sharp</font> Academy</h1>
+        </div>
         <div class = "form_space">
-            <h1>Skill-Sharp Academy Login</h1>
+            
             <form>
                 <input type = "text" name = "Firstname"> 
             </form>

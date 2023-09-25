@@ -3,7 +3,7 @@
         <link rel="stylesheet" href="style/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body class="main_page">
         <div class = "main_title">
             <h1>Skill-<font style="color :white;">Sharp</font> Academy</h1>
         </div>
