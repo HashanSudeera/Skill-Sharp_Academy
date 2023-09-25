@@ -4,7 +4,7 @@
         <title>Student Registration</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="teacher_singup_page">
+    <body class="student_register_page">
     <div class = "main_title">
             <h1>Skill-<font style="color :white;">Sharp</font> Academy</h1>
         </div>
@@ -52,6 +52,10 @@
                     <tr>
                         <td colspan="2" class="r_button"><input type="submit" value="Register" class="register_button"></td>
                     </tr>
+                    <tr>
+                        <td colspan="2"><input type="reset" value="Clear form" class="clear"></td>
+                    </tr>
+
                     
                 </table>
                 </div>
