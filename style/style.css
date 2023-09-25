@@ -89,11 +89,26 @@ h1 {
 }
 
 .form_space{
+    font-family: 'Gloock', serif;
     background-color: brown;
-    text-align: center;
     position: absolute;
-    left: 200px;
-    top: 100px;
+    left: 380px;
+    top: 160px;
+    padding: 50px;
+    padding-right: 400px;
+    border-radius: 10px;
+}
+
+.input{
+    background-color: white;
+    color: rgb(6, 61, 80);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.form_name{
+    color: aqua;
+    font-size: 40px;
 }
 
 
