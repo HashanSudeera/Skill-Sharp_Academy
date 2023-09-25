@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body class="login_page">
     <div class = "main_title">
@@ -12,10 +12,10 @@
             <form>
                 <table>
                     <tr>
-                        <td><label>User Name</label></td>
+                        <td><label>Your Email</label></td>
                     </tr>
                     <tr>
-                        <td><input type = "text" name = "username" class="input"> </td>
+                        <td><input type = "text" name = "email" class="input"> </td>
                     </tr>
                     <tr>
                         <td><label>Password</label></td>
@@ -24,13 +24,15 @@
                         <td><input type = "password" name = "username" class="input"> </td>
                     </tr>
                     <tr>
-                        <td><input type="submit" value="submit"></td>
+                        <td><input type="submit" value="Login" class="submit_button"></td>
                     </tr>
                     
                 </table>
-                
-                
             </form>
+            <div class="logimage">
+                <img src="img/1.png" alt="image not found">
+            </div>
+            <font>New to Academy </font><a href="student_singup.php">Join Now</a>
         </div>
 
     </body>

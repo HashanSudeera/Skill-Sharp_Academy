@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans:wght@300;400&family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans:wght@300;400&family=Kenia&family=Ysabeau+Infant&display=swap');
+
 h1 {
     color: rgb(30, 255, 0);
     font-family: 'Gloock', serif;
@@ -7,15 +9,30 @@ h1 {
     padding: 10px;
     letter-spacing: 4px;
 }
+a{
+    color: rgb(6, 61, 80);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+font{
+    color: rgb(6, 61, 80);
+}
 
 .main_page{
     background-image: url("img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+ 
 }
 
 .login_page{
-    background-image: url("img/login-image.jpg");
+    background-image: url("img/loginimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.teacher_login_page{
+    background-image: url("img/teacher_login.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -90,9 +107,9 @@ h1 {
 
 .form_space{
     font-family: 'Gloock', serif;
-    background-color: brown;
+    background-color:rgb(122, 221, 221);
     position: absolute;
-    left: 380px;
+    left: 150px;
     top: 160px;
     padding: 50px;
     padding-right: 400px;
@@ -103,12 +120,57 @@ h1 {
     background-color: white;
     color: rgb(6, 61, 80);
     font-size: 20px;
+    font-family: 'Ysabeau Infant', sans-serif;
     border: none;
     border-radius: 5px;
+    height: 35px;
+    width: 300px;
+    transition: 0.5s;
 }
+.input:hover{
+    background-color:rgb(207, 207, 207) ;
+}
+input[type=text]:focus {
+    border: 1px solid rgb(6, 61, 80);
+  }
+
 .form_name{
-    color: aqua;
+    color: rgb(6, 61, 80);
     font-size: 40px;
+}
+
+.submit_button{
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 200px;
+    font-family:  'Gloock', serif ;
+    font-size: 20px;
+    background-color: rgb(6, 61, 80) ;
+    color: rgb(30, 255, 0);
+    border: solid rgb(30, 255, 0) 1px ;
+    border-radius: 10px;
+
+}
+.submit_button:hover{
+    background-color: rgb(6, 61, 80);
+    color: white;
+    border: solid white 1px ;
+    border-radius: 10px;
+
+}
+.submit_button:active{
+    background-color: white ;
+    color: rgb(6, 61, 80);
+    border: solid rgb(6, 61, 80) 1px ;
+    border-radius: 10px;
+
+}
+.logimage img{
+    width: 400px;
+    position: absolute;
+    top: 30px;
+    left: 350px;
 }
 
 
