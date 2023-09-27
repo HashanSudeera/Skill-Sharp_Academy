@@ -22,5 +22,5 @@ if (isset($_POST['singup'])){
 
 }
 else{
-    header('Location../student_singup.php');
+    header('Location:../student_singup.php');
 }

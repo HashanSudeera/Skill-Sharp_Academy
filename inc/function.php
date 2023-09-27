@@ -21,8 +21,8 @@ function emailExits($conn,$email){
 
 }
 
-function createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$password){
-    $insert_value = "INSERT INTO student(Firstname,Lastname,Birthdate,City,Email,Password) VALUES(?,?,?,?,?,?) ;";
+function createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$pwd){
+    $insert_value = "INSERT INTO student(Firstname,Lastname,Birthdate,City,Email,Pwd) VALUES(?,?,?,?,?,?) ;";
 
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt , $insert_value)){
@@ -30,12 +30,32 @@ function createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$password
         exit();
     }
 
-    $hashedpwd = password_hash($password,PASSWORD_DEFAULT);
+    $hashedpwd = password_hash($pwd,PASSWORD_DEFAULT);
     mysqli_stmt_bind_param($stmt ,'ssssss',$firstname,$lastname,$birthdate,$city,$email,$hashedpwd);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
-    header("Location:../student_login.php?error = none");
+    header("Location:../student_login.php?error=none");
     exit();
 
 }
+/*function loguser($conn,$email,$pwd){
+    $emailExists = emailExits($conn,$email);
+    if ($emailExists === false){
+        header("Location:../student_login.php?error=wrongemail");
+        exit();
+    }
+    $pwdHashed = $emailExists['Pwd'];
+    $checkpwd = password_verify($pwd , $pwdHashed);
+
+    if ($checkpwd === false){
+        header("Location:../student_login.php?error= wrong_password");
+        exit();
+    }
+    else if($checkpwd === true){
+        header("Location:../student_login.php?error=success");
+        exit();
+
+    }
+
+}*/
