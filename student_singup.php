@@ -29,27 +29,27 @@
                        
                     </tr>
                     <tr>
-                    <td><input type="date" name = "dob" class="date_of"></td>
-                    <td class="firstcolum1"><input type="text" name="city" class="input1"></td>
+                    <td><input type="date" name = "dob" class="date_of" required></td>
+                    <td class="firstcolum1"><input type="text" name="city" class="input1" required></td>
                     </tr>
                     <tr>
                         <td><label>Email</label></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="text" name="email" class="inputemail" required></td>
+                        <td colspan="2"><input type="email" name="email" class="inputemail" required></td>
                     </tr>
         
                     <tr>
                         <td><label>Password</label></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="password" name="password" class="inputemail" onChange="onChange()"></td>
+                        <td colspan="2"><input type="password" name="password" class="inputemail" onChange="onChange()" required></td>
                     </tr>
                     <tr>
-                        <td><label>Retype Password</label></td>
+                        <td><label>Confirm Password</label></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="password" name="confirm" class="inputemail" onChange="onChange()"></td>
+                        <td colspan="2"><input type="password" name="confirm" class="inputemail" onChange="onChange()" required></td>
                       
                     </tr>
                     <script type="text/javascript">

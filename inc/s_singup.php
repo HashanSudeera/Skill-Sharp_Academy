@@ -10,6 +10,20 @@ if (isset($_POST['singup'])){
 
     echo $firstname . $lastname . $birthdate . $city . $email . $password;
 
+    require_once "conndb.php";
+    require_once "function.php";
+
+    $emailexist = emailExits($conn,$email);
+
+    if ($emailexist !== false){
+        header('Location:../student_singup.php?error= emailexists');
+        exit();
+    }
+    
+    createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$password);
+
+
+
 
 }
 else{
