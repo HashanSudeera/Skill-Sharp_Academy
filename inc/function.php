@@ -6,7 +6,7 @@ function emailExits($conn,$email){
         header("Location:../student_singup.php?error = stmtfaild");
         exit();
     }
-    mysqli_stmt_bind_param($stmt ,'ss',$email);
+    mysqli_stmt_bind_param($stmt ,'s',$email);
     mysqli_stmt_execute($stmt);
     $resultDate = mysqli_stmt_get_result($stmt);
 
@@ -29,5 +29,13 @@ function createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$password
         header("Location:../student_singup.php?error = stmtfaild");
         exit();
     }
+
+    $hashedpwd = password_hash($password,PASSWORD_DEFAULT);
+    mysqli_stmt_bind_param($stmt ,'ssssss',$firstname,$lastname,$birthdate,$city,$email,$hashedpwd);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
+
+    header("Location:../student_login.php?error = none");
+    exit();
 
 }

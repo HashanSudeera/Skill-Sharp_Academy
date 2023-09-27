@@ -8,22 +8,17 @@ if (isset($_POST['singup'])){
     $email     = $_POST['email'];
     $password  = $_POST['password'];
 
-    echo $firstname . $lastname . $birthdate . $city . $email . $password;
-
+    //include database connection and function php
     require_once "conndb.php";
     require_once "function.php";
-
+    //check email
     $emailexist = emailExits($conn,$email);
-
     if ($emailexist !== false){
         header('Location:../student_singup.php?error= emailexists');
         exit();
     }
-    
+    //insert value for the data base using this function
     createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$password);
-
-
-
 
 }
 else{
