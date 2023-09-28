@@ -11,7 +11,8 @@
     
         <div class = "singup_form_space">
             <h2 style="color: white; font-size:35px;">Student Registration</h2>
-            <form>
+
+            <form action="inc/s_singup.php" method="POST">
                 <div class = "table_align">
                 <table>
                     <tr>
@@ -19,8 +20,8 @@
                         <td class="firstcolum1"><label>LastName</label></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="firstname" class="input1"></td>
-                        <td class="firstcolum1"><input type="text" name="lastname" class="input1"></td>
+                        <td><input type="text" name="firstname" class="input1" required></td>
+                        <td class="firstcolum1"><input type="text" name="lastname" class="input1" required></td>
                     </tr>
                     <tr>
                         <td><label>Birth date</label></td>
@@ -28,36 +29,54 @@
                        
                     </tr>
                     <tr>
-                    <td><input type="date" name = "dob" class="date_of"></td>
-                    <td class="firstcolum1"><input type="text" name="city" class="input1"></td>
+                    <td><input type="date" name = "dob" class="date_of" required></td>
+                    <td class="firstcolum1"><input type="text" name="city" class="input1" required></td>
                     </tr>
                     <tr>
                         <td><label>Email</label></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="text" name="email" class="inputemail"></td>
+                        <td colspan="2"><input type="email" name="email" class="inputemail" required></td>
                     </tr>
+        
                     <tr>
                         <td><label>Password</label></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="password" name="password" class="inputemail"></td>
+                        <td colspan="2"><input type="password" name="password" class="inputemail" onChange="onChange()" required></td>
                     </tr>
                     <tr>
-                        <td><label>Retype Password</label></td>
+                        <td><label>Confirm Password</label></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="password" name="confirm_password" class="inputemail"></td>
+                        <td colspan="2"><input type="password" name="confirm" class="inputemail" onChange="onChange()" required></td>
+                      
                     </tr>
+                    <script type="text/javascript">
+                        function onChange() {
+                        const password = document.querySelector('input[name=password]');
+                        const confirm = document.querySelector('input[name=confirm]');
+                        if (confirm.value === password.value) {
+                            confirm.setCustomValidity('');
+                        } else {
+                            confirm.setCustomValidity('Passwords do not match');
+                        }
+}
+                    </script>
+                 
                     <tr>
-                        <td colspan="2" class="r_button"><input type="submit" value="Register" class="register_button"></td>
+                        <td colspan="2" class="r_button"><input type="submit" value="Register" name="singup" class="register_button"></td>
                     </tr>
                     <tr>
                         <td colspan="2"><input type="reset" value="Clear form" class="clear"></td>
                     </tr>
+                    <tr>
+                        <td><font style="color: white;">Alraday have an account </font><a href="student_login.php" style="color: rgb(70, 226, 50);">Log in</a></td>
+                    </tr>
 
                     
                 </table>
+                
                 </div>
             </form>
         </div>

@@ -11,22 +11,22 @@
 
         <div class = "form_space">
             <h2 class="form_name">Student Login</h2>
-            <form>
+            <form action="inc/s_login.php" method="POST">
                 <table>
                     <tr>
-                        <td><label>Your Email</label></td>
+                        <td><label>Email</label></td>
                     </tr>
                     <tr>
-                        <td><input type = "text" name = "email" class="input"> </td>
+                        <td><input type = "email" name = "email" class="input" required> </td>
                     </tr>
                     <tr>
                         <td><label>Password</label></td>
                     </tr>
                     <tr>
-                        <td><input type = "password" name = "username" class="input"> </td>
+                        <td><input type = "password" name = "pwd" class="input" required> </td>
                     </tr>
                     <tr>
-                        <td><input type="submit" value="Login" class="submit_button"></td>
+                        <td><input type="submit" value="Login" class="submit_button" name="login"></td>
                     </tr>
                     
                 </table>

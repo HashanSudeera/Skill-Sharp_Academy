@@ -55,6 +55,9 @@
                     <tr>
                         <td colspan="2"><input type="reset" value="Clear form" class="clear"></td>
                     </tr>
+                    <tr>
+                        <td><font style="color: white;">Alraday have an account </font><a href="student_login.php" style="color: rgb(70, 226, 50);">Log in</a></td>
+                    </tr>
 
                     
                 </table>
