@@ -1,5 +1,7 @@
 <?php
 
+//conncet the data base..
+
     $server = "localhost";
     $username = "sudeera";
     $password = "";

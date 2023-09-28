@@ -8,16 +8,11 @@ include_once ("conndb.php");
                
         require_once "function.php";
         
-        student_log($conn,$email,$password);
+        teacher_log($conn,$email,$password);
 
 
     }
     else{
-        header("Location:../student_login.php");
+        header("Location:../teacher_login.php");
         exit();
     }
-
-  
-
-    
-

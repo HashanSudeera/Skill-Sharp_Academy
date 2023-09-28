@@ -10,6 +10,18 @@
         </div>
 
         <div class = "form_space">
+        <?php
+            if (isset($_GET['error'])){
+
+                if($_GET['error'] == 'wrongemail'){
+                    echo '<div class="error">Incorrect email address</div>';
+                }
+                else if($_GET['error'] == 'wrong_password'){
+                    echo '<div class="error">Incorrect password</div>';
+                }
+
+            }
+            ?>
             <h2 class="form_name">Student Login</h2>
             <form action="inc/s_login.php" method="POST">
                 <table>

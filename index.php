@@ -1,3 +1,7 @@
+<?php 
+    //start session
+        session_start();
+?>
 <html>
     <head>
         <title>Skill-Sharp-Academy</title>
@@ -8,20 +12,31 @@
     <body class="main_page">
         <div class = "main_title">
             <h1>Skill-<font style="color :white;">Sharp</font> Academy</h1>
-        </div>
+            <?php 
+        if (isset($_SESSION['firstname'])){
+            //this can use for profile page go path
+            echo '<a href="#" class = "u_n">'.'hi..'.$_SESSION['firstname'].'</a>' ;
+            echo '<a href="inc/log_out.php" class = "u_n1">'.'Logout'.'</a>';
+        }
+        else{
+            echo '<a href="s_t_interfac.php" class = "u_n1">'. "Login".'</a>';
+        }
+        ?></div>
 
-        <div class="student">
-            <img src="img/student.png" alt="image not found" class="img">
-            <div class="text-block">
-                <a href="student_login.php">Student Login</a>
-            </div>
         </div>
-        <div class="teacher">
-            <img src="img/teacher.jpg" alt="image not found" class="img">
-            <div class="text-block1">
-                <a href="teacher_login.php">Teacher Login</a>
-            </div>
+        <div class="box">
+        
+        <h2 class="title"><?php
+        if(isset($_SESSION['firstname'])){
+            echo 'Hi,'.$_SESSION['firstname']. '!';
+        }
+        else{
+            echo 'Hi, User! ';
+        }
+        ?></h2>
+        <img src="img/hellooo.png" alt="image here" class="img_hi">
+    
+        <p class="quats">"Live as if you were to die tomorrow. <br> Learn as if you were to live Forever."<br></p>
         </div>
-
     </body>
 </html>

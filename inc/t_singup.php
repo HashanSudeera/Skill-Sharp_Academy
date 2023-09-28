@@ -12,14 +12,14 @@ if (isset($_POST['singup'])){
 
     require_once "function.php";
 
-    $emailalrady = student_emailExits($conn,$email);
+    $emailalrady = teacher_emailExits($conn,$email);
 
     if ($emailalrady !== false){
-        header("Location:../student_singup.php?error=alradyemail");
+        header("Location:../teacher_singup.php?error=alradyemail");
         exit();
     }
 
-    student_create($conn,$firstname,$lastname,$birthdate,$city,$email,$password);
+    teacher_create($conn,$firstname,$lastname,$birthdate,$city,$email,$password);
 
     //this is helpful my error fix 
     //$hash = password_hash($password , PASSWORD_DEFAULT);

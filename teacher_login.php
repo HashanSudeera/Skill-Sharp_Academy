@@ -10,23 +10,35 @@
         </div>
 
         <div class = "form_space">
+        <?php
+            if (isset($_GET['error'])){
+
+                if($_GET['error'] == 'wrongemail'){
+                    echo '<div class="error">Incorrect email address</div>';
+                }
+                else if($_GET['error'] == 'wrong_password'){
+                    echo '<div class="error">Incorrect password</div>';
+                }
+
+            }
+            ?>
             <h2 class="form_name">Teacher Login</h2>
-            <form>
+            <form action="inc/t_login.php" method="POST">
                 <table>
                     <tr>
-                        <td><label>Your Email</label></td>
+                        <td><label>Email</label></td>
                     </tr>
                     <tr>
-                        <td><input type = "text" name = "email" class="input"> </td>
+                        <td><input type = "email" name = "email" class="input" required> </td>
                     </tr>
                     <tr>
                         <td><label>Password</label></td>
                     </tr>
                     <tr>
-                        <td><input type = "password" name = "username" class="input"> </td>
+                        <td><input type = "password" name = "pwd" class="input" required> </td>
                     </tr>
                     <tr>
-                        <td><input type="submit" value="Login" class="submit_button"></td>
+                        <td><input type="submit" value="Login" class="submit_button" name="login"></td>
                     </tr>
                     
                 </table>
