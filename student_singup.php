@@ -10,6 +10,14 @@
         </div>
     
         <div class = "singup_form_space">
+        <?php
+            if (isset($_GET['error'])){
+
+                if($_GET['error'] == 'alradyemail'){
+                    echo '<div class="error">Email address alrady exits</div>';
+                }
+            }
+            ?>
             <h2 style="color: white; font-size:35px;">Student Registration</h2>
 
             <form action="inc/s_singup.php" method="POST">
@@ -79,6 +87,7 @@
                 
                 </div>
             </form>
+            
         </div>
     
     </body>

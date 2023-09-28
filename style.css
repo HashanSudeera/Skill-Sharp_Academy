@@ -1,6 +1,9 @@
+/*import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans:wght@300;400&family=Kenia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans:wght@300;400&family=Kenia&family=Ysabeau+Infant&display=swap');
 
+/*Tags styles
+------------------------------------------------------*/
 h1 {
     color: rgb(30, 255, 0);
     font-family: 'Gloock', serif;
@@ -18,6 +21,9 @@ font{
     color: rgb(6, 61, 80);
 }
 
+
+/*all background images
+-------------------------------------------------------*/
 .main_page{
     background-image: url("img/background.png");
     background-repeat: no-repeat;
@@ -25,7 +31,6 @@ font{
  
 }
 
-/*login page background*/
 .login_page{
     background-image: url("img/loginimage.jpg");
     background-repeat: no-repeat;
@@ -47,10 +52,11 @@ font{
     background-size: cover;
 }
 
+/*main title style
+-----------------------------------------------------------------*/
 .main_title{
     background-color: rgb(6, 61, 80);
     border-radius: 10px;
-
 }
 
 .img{
@@ -58,15 +64,12 @@ font{
     height: 300px;
     border: solid rgb(6, 61, 80) 10px ;
     border-radius: 10px;
-
-    
 }
 
 .student{
     position: relative;
     font-family: 'Gloock', serif;
     margin-left: 290px;
-
 }
 .teacher{
     position: relative;
@@ -75,7 +78,8 @@ font{
     margin-top: 10px;
     
 }
-/*student text block*/
+/*student login text block
+-----------------------------------------------------------*/
 .text-block a{
     position: absolute;
     top: 1px;
@@ -95,7 +99,9 @@ font{
     background-color: white ;
     color : rgb(6, 61, 80);
 }
-/*teacher text block*/
+
+/*teacher login text block
+-------------------------------------------------------------*/
 .text-block1 a{
     position: absolute;
     top: 1px;
@@ -183,23 +189,27 @@ input[type=text]:focus {
     left: 350px;
 }
 
+
+/*
+sing up form styles
+-------------------------------------------------------------------------------------
+*/
+
 .singup_form_space{
     font-family: 'Gloock', serif;
     background-color:rgb(6, 61, 80);
     text-align: center;
     position: absolute;
     left: 430px;
-    top: 124px;
+    top: 90px;
     padding: 30px;
     padding-right: 1px;
     border-radius: 5px;
     
-
 }
 .table_align{
     position: relative;
     left: 35px;
-
 
 }
 .table_align td{
@@ -289,6 +299,9 @@ input[type=text]:focus {
     color: rgb(70, 226, 50) ;
 
 }
+/*
+User name display
+-----------------------------------------------------------------------------------*/
 .u_n{
     color: rgb(70, 226, 50);
     position: absolute;
@@ -316,5 +329,47 @@ input[type=text]:focus {
 .u_n1:hover{
     background-color: aquamarine;
     color:black ;
+}
+.box{
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 20px;
+    height: 400px;
+    border-radius: 20px;
+}
+/*
+name display main page main page disigns 
+-----------------------------------------------------------------*/
+.title{
+    font-family: 'Gloock', serif ;
+    font-size: 40px;
+    position: relative;
+    top: 90px;
+
+}
+.img_hi{
+    position: relative;
+    left: 600px;
+    bottom: 20px;
+    width: 600px;
+}
+.details{
+    position: absolute;
+    top: 200px;
+}
+.quats{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 30px;
+    position: relative;
+    bottom: 300px;
+    font-weight: bold;
+}
+/*Allter massage style
+-------------------------------------------------------------------*/
+.error{
+    color: red;
+    background-color: rgb(176, 243, 206) ;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
 }
 

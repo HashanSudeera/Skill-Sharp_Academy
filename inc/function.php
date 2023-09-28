@@ -47,7 +47,7 @@ function loguser($conn,$email,$password){
     $pwdHashed = $emailExists['s_pwd'];
     $checkpwd = password_verify($password , $pwdHashed);
     if ($checkpwd === false){
-        header("Location:../student_login.php?error= wrong_password");
+        header("Location:../student_login.php?error=wrong_password");
         exit();
     }
     else if($checkpwd === true){

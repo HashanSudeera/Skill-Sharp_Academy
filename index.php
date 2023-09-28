@@ -1,7 +1,7 @@
 <?php 
+    //start session
         session_start();
 ?>
-
 <html>
     <head>
         <title>Skill-Sharp-Academy</title>
@@ -24,17 +24,19 @@
         ?></div>
 
         </div>
+        <div class="box">
         
-        <h1>Heloo!<?php 
-        if (isset($_SESSION['firstname'])){
-
-            echo $_SESSION['firstname']. '!'; 
+        <h2 class="title"><?php
+        if(isset($_SESSION['firstname'])){
+            echo 'Hi,'.$_SESSION['firstname']. '!';
         }
-    else{
-        echo "User !";
-    }
-        ?></h1>
-        <a href="s_t_interfac.php">login</a>
-
+        else{
+            echo 'Hi, User! ';
+        }
+        ?></h2>
+        <img src="img/hellooo.png" alt="image here" class="img_hi">
+    
+        <p class="quats">"Live as if you were to die tomorrow. <br> Learn as if you were to live Forever."<br></p>
+        </div>
     </body>
 </html>
