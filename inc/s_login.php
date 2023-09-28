@@ -2,12 +2,12 @@
 
     if(isset($_POST['login'])){
         $email = $_POST['email'];
-        $pwd   = $_POST['pwd'];
+        $password   = $_POST['pwd'];
 
         require_once "conndb.php";
         require_once "function.php";
         
-        //loguser($conn,$email,$pwd);
+        loguser($conn,$email,$password);
 
 
     }
