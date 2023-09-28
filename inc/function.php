@@ -1,6 +1,6 @@
 <?php
 function emailExits($conn,$email){
-    $sql = "SELECT * FROM student WHERE Email = ?;";
+    $sql = "SELECT * FROM student_table WHERE email = ?;";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt , $sql)){
         header("Location:../student_singup.php?error = stmtfaild");
@@ -22,7 +22,7 @@ function emailExits($conn,$email){
 }
 
 function createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$password){
-    $insert_value = "INSERT INTO student(Firstname,Lastname,Birthdate,City,Email,stu_pwd) VALUES(?,?,?,?,?,?) ;";
+    $insert_value = "INSERT INTO student_table(f_name,l_name,dob,city,email,s_pwd) VALUES(?,?,?,?,?,?) ;";
 
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt , $insert_value)){

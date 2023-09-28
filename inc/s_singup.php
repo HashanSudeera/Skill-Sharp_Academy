@@ -1,5 +1,7 @@
 <?php
 
+include_once ("conndb.php");
+
 if (isset($_POST['singup'])){
     $firstname = $_POST['firstname'];
     $lastname  = $_POST['lastname'];
@@ -8,19 +10,35 @@ if (isset($_POST['singup'])){
     $email     = $_POST['email'];
     $password  = $_POST['password'];
 
-    //include database connection and function php
-    require_once "conndb.php";
     require_once "function.php";
-    //check email
-    $emailexist = emailExits($conn,$email);
-    if ($emailexist !== false){
-        header('Location:../student_singup.php?error= emailexists');
+
+    $emailalrady = emailExits($conn,$email);
+
+    if ($emailalrady !== false){
+        header("Location:../student_singup.php?error=alradyemail");
         exit();
     }
-    //insert value for the data base using this function
-    createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$password);
 
-}
-else{
-    header('Location:../student_singup.php');
+    createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$password);
+    
+
+    header("Location../student_login.php?error=none");
+    exit();
+
+    //this is helpful my error fix 
+    //$hash = password_hash($password , PASSWORD_DEFAULT);
+    /*$add = "INSERT INTO student_table(f_name,l_name,dob,city,email,s_pwd)
+    VALUES('{$firstname}','{$lastname}','{$birthdate}','{$city}','{$email}','{$password}')";
+
+
+    $check = mysqli_query($conn,$add);
+
+    if ($check){
+    }
+    else{
+        echo "Error: " . $add . "<br>" . mysqli_error($conn);
+    }
+    mysqli_close($conn);*/
+
+
 }
