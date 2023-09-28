@@ -20,10 +20,6 @@ if (isset($_POST['singup'])){
     }
 
     createuser($conn,$firstname,$lastname,$birthdate,$city,$email,$password);
-    
-
-    header("Location../student_login.php?error=none");
-    exit();
 
     //this is helpful my error fix 
     //$hash = password_hash($password , PASSWORD_DEFAULT);
@@ -37,8 +33,8 @@ if (isset($_POST['singup'])){
     }
     else{
         echo "Error: " . $add . "<br>" . mysqli_error($conn);
-    }
-    mysqli_close($conn);*/
+    }*/
+    mysqli_close($conn);
 
 
 }
