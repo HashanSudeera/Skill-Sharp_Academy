@@ -9,7 +9,7 @@ Teacher
 
 Student Table
 ------------------------------------
-StudentID (Primary Key) [S001]
+StudentID (Primary Key) [auto incriment]
 FirstName
 LastName
 DateOfBirth (calculate age)
@@ -19,27 +19,70 @@ Password
 
 Teachers Table
 ------------------------------------
-TeacherID (Primary Key) [T001]
+TeacherID (Primary Key) [auto incriment]
 FirstName
 LastName
 DateOfBirth (calculate age)
 City
-ContactNumber
+Email
+Password
 
 --------------------------------
 create files 
 --------------------------------
 index.php [main file]
-2 logging form
+student logging form
 2 singup form
 student dashboard
 teacher dashboard
 
 
 
-
+php password hash not match error..
 1).$2y$10$uJU2tUYa36YGF7v7pccsSurtjrjxXLPUF38vFlVRl6r9NR4T/jT8W
 2).$2y$10$x5Nu4/Qcd458jMNWTvcr7O/tou14CP1BxlvFvf0sIYpfPey7j7rBS
+
+
+# 🚀 Welcome to Skill-Sharp Academy
+
+![Skill-Sharp Academy Logo](https://example.com/logo.png)
+
+## Unleash the Future of Education
+
+Welcome to Skill-Sharp Academy, where we empower learners and educators alike with our cutting-edge Student and Teacher Management System. This repository is your portal to a world of educational innovation, efficiency, and excellence.
+
+## 📚 Explore the System
+
+### Students 🎓
+
+At the heart of our academy are our students, and we've designed the Student Management System with them in mind:
+
+- **Effortless Enrollment**: Easily onboard new students with their personal details.
+- **Age on Autopilot**: Watch as the system calculates ages automatically, like magic.
+- **Personalization**: Students can update their profiles to stay connected and engaged.
+- **Fortified Security**: Protect student data with robust password authentication.
+- **City Diversity**: Discover the rich tapestry of cities our students hail from.
+
+### Teachers 👩‍🏫👨‍🏫
+
+Our dedicated educators light the path to knowledge. The Teacher Management System empowers them:
+
+- **Seamless Staffing**: Effortlessly add new teachers to our esteemed roster.
+- **Age at a Glance**: Witness age calculations happening in an instant.
+- **Profile Power**: Teachers can easily manage their profiles, ensuring seamless communication.
+- **Data Protection**: Rest assured, teacher data is safeguarded with top-notch password security.
+- **City Insights**: Keep an eye on the diverse cities our educators call home.
+
+## 🚀 Getting Started
+
+Embark on your journey with Skill-Sharp Academy in three simple steps:
+
+1. **Clone**: Capture the magic by cloning this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/HashanSudeera/Skill-Sharp_Academy.git
+
+
 
 
 
