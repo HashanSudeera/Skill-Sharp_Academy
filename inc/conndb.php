@@ -7,9 +7,9 @@
     $password = "";
     $database = "skill_sharp_academy";
 
-    $conn = mysqli_connect($server,$username,$password,$database);
+    $conn = new mysqli($server,$username,$password,$database);
 
-    if (mysqli_connect_errno()) {
-        die("Connection failed: " . mysqli_connect_errno());
+    if ($conn -> connect_error) {
+        die("Connection failed: " . $conn -> connect_error);
       }
 
